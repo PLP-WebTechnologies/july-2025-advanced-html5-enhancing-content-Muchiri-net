@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple HTML5 Page & Form</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+    table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; }
+    fieldset { margin-bottom: 15px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 5px; margin-top: 3px; }
+    button { margin-top: 10px; padding: 10px 15px; }
+  </style>
+</head>
+<body>
+
+  <h1>My Simple HTML5 Page</h1>
+
+  <h2>My Favorite Books</h2>
+  <ul>
+    <li>When a Stranger called</li>
+    <li>Notes on Grief</li>
+    <li>Let me call you back</li>
+  </ul>
+
+  <h2>Favorite F1 Drivers</h2>
+  <table>
+    <tr><th>Driver</th><th>Team</th></tr>
+    <tr><td>Lando Norris</td><td>Mclaren</td></tr>
+    <tr><td>Lewis Hamilton</td><td>Mercedes</td></tr>
+    <tr><td>Charles Leclerc</td><td>Ferrari</td></tr>
+    <tr><td>Sergio Perez</td><td>Red Bull</td></tr>
+  </table>
+
+  <h2>Sample Image</h2>
+  <img src="f1 image.jpg" alt="f1 Image" width="400"/>
+
+  <h2>Contact Me</h2>
+  <form>
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="name">Name *</label>
+      <input type="text" id="name" name="name" required minlength="2" placeholder="Your name" />
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Message</legend>
+      <label for="subject">Subject *</label>
+      <select id="subject" name="subject" required>
+        <option value="" disabled selected>Select subject</option>
+        <option value="question">Question</option>
+        <option value="feedback">Feedback</option>
+      </select>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" rows="4" required minlength="10" placeholder="Write your message"></textarea>
+    </fieldset>
+
+    <button type="submit">Send</button>
+  </form>
+
+</body>
+</html>
